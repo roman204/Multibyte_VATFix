@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Multibyte_VATFix>
+			<active>true</active>
+			<version>1.0.1</version>
+			<codePool>community</codePool>
+		</Multibyte_VATFix>
+	</modules>
+</config>
