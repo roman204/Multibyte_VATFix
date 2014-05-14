@@ -19,10 +19,11 @@ class Multibyte_VATFix_Helper_Data extends Mage_Customer_Helper_Data {
      */
     public function checkVatNumber($countryCode, $vatNumber, $requesterCountryCode = '', $requesterVatNumber = '') {
         //@RHU take the VAT without the first two signs (which are the countrycode)
-        if ($this->includesCountryCode($vatNumber)) {
-            $vatNumber = substr(str_replace(' ', '', trim($vatNumber)), 2);
+        if (Mage::getStoreConfig('customer/create_account/vatfix_enabled') && $this->includesCountryCode($vatNumber)) {
+            $newVatNumber = substr(str_replace(' ', '', trim($vatNumber)), 2);
+            Mage::log('Countrycode removed from VAT.(before:' . $vatNumber . '/after:' . $newVatNumber . ')');
         }
-        return parent::checkVatNumber($countryCode, $vatNumber, $requesterCountryCode, $requesterVatNumber);
+        return parent::checkVatNumber($countryCode, $newVatNumber, $requesterCountryCode, $requesterVatNumber);
     }
 
     /**
