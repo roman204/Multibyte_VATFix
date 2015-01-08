@@ -1,0 +1,16 @@
+{
+    "name":"multibyte/vatfix",
+    "type":"magento-module",
+    "license":"OSL-3.0",
+    "homepage":"https://github.com/roman204/Multibyte_VATFix.git",
+    "description":"Magento extension to fix Magentos VAT Handling and accept VAT's with Countrycode.",
+    "authors":[
+        {
+            "name":"Roman Hutterer",
+            "email":"hello@multibyte.at"
+        }
+    ],
+    "require":{
+        "magento-hackathon/magento-composer-installer":"*"
+    }
+}
