@@ -30,6 +30,6 @@ script:
 notifications:
   email:
     recipients:
-      - travis@fabrizio-branca.de
+      - hallo@multibyte.at
     on_success: always
     on_failure: always

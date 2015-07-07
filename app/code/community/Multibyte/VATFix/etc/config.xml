@@ -20,7 +20,7 @@
     <phpunit>
         <suite>
             <modules>
-                <Multibyte_VATFix/>
+                <Multibyte_VATFix />
             </modules>
         </suite>
     </phpunit>
