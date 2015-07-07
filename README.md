@@ -1,3 +1,4 @@
+!(http://www.multibyte.at/wp-content/uploads/2013/07/logo_106_1-300x192.jpg "Magento UID Fix by multibyte.at")
 Multibyte_VATFix
 ================
 ![Build Status](https://travis-ci.org/roman204/Multibyte_VATFix.svg?branch=master "Build Status")
