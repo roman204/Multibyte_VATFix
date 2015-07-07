@@ -17,4 +17,11 @@
             </multibyte_vatfix>
         </helpers>
     </global>
+    <phpunit>
+        <suite>
+            <modules>
+                <Multibyte_VATFix/>
+            </modules>
+        </suite>
+    </phpunit>
 </config>
