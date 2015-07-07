@@ -13,4 +13,4 @@ It can be enabled by setting config "customer/create_account/vatfix_enabled" to 
 Link to our Blogpost in german: http://www.multibyte.at/2013/07/magento-fix-fur-die-uid-validierung/
 
 Screenshots:
-![Result](http://www.multibyte.at/wp-content/uploads/2013/07/Bildschirmfoto6-1024x294.png)
+![Result](http://www.multibyte.at/wp-content/uploads/2013/07/Bildschirmfoto6.png)
