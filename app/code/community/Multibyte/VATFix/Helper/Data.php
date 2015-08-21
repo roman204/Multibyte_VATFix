@@ -20,7 +20,9 @@ class Multibyte_VATFix_Helper_Data extends Mage_Customer_Helper_Data
     public function checkVatNumber($countryCode, $vatNumber, $requesterCountryCode = '', $requesterVatNumber = '')
     {
         $storeId = Mage::app()->getStore()->getStoreId();
-
+        $newVatNumber = $vatNumber;
+        $newRequesterVatNumber = $requesterVatNumber;
+        
         //@RHU take the VAT without the first two signs (which are the countrycode)
         if (Mage::getStoreConfigFlag('customer/create_account/vatfix_enabled', $storeId)) {
             if ($this->includesCountryCode($vatNumber)) {
